@@ -3796,6 +3796,7 @@ h6 {
   background-position: 50% 100%;
   position: relative;
   background-repeat: no-repeat;
+  background-color: #fff;
 }
 .triangle-left {
   height: 60px;
@@ -4029,17 +4030,20 @@ h6 {
 .inner-page {
   background-image: url(../images/image-bg.jpg);
   background-repeat: no-repeat;
+  background-position: 50% 0;
   background-size: 100% auto;
 }
 .inner-page .main-header {
   position: static;
+  margin-bottom: 274px;
+}
+.inner-page .main-content {
+  margin-top: -302px;
 }
 .inner-page .bg {
   border-top: 31px solid #f44336;
 }
 .inner-page p {
-  font-size: 22px;
-  line-height: 34px;
   margin-bottom: 23px;
 }
 .bg-white {
@@ -4061,16 +4065,16 @@ h6 {
 .title-blue {
   background-color: #0cc1cc;
   color: #ffffff;
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: normal;
-  line-height: 50px;
+  line-height: 3.125rem;
   margin-top: 0;
   padding: 0 80px;
   display: inline-block;
 }
 .title-triangle {
-  font-size: 28px;
-  line-height: 48px;
+  font-size: 1.75rem;
+  line-height: 3rem;
   color: #ff3333;
   font-weight: normal;
   margin-top: 5px;
@@ -4081,9 +4085,11 @@ h6 {
 }
 .article-container {
   padding: 0 35px 0 48px;
+  font-size: 1.375rem;
+  line-height: 2.125rem;
 }
 .title-middle {
-  font-size: 22px;
+  font-size: 1.375rem;
   color: #ff3333;
   line-height: 34px;
   font-weight: normal;
@@ -4092,7 +4098,7 @@ h6 {
 .link-style {
   background-color: #f7f7f7;
   color: #00cccc;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 48px;
   padding: 11px 0;
   font-weight: bold;
@@ -4108,7 +4114,7 @@ h6 {
 .link-style .icon {
   color: #f1453d;
   font-size: 52px;
-  margin-left: 20px;
+  margin: 0 10px 0 20px;
   line-height: 52px;
 }
 .link-style span {
@@ -4125,6 +4131,9 @@ h6 {
   display: block;
   position: absolute;
 }
+.seclect-style {
+  display: none;
+}
 .nav-colour ul {
   margin-bottom: 0;
   padding-right: 0;
@@ -4133,7 +4142,7 @@ h6 {
   float: right;
 }
 .nav-colour a {
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
   -webkit-transition: all 0.2s ease-out 0s;
   -moz-transition: all 0.2s ease-out 0s;
@@ -4144,7 +4153,7 @@ h6 {
 .nav-colour a:hover {
   text-decoration: none;
 }
-.nav-red ul {
+.nav-red {
   background-color: #f44336;
 }
 .nav-red a {
@@ -4174,9 +4183,6 @@ h6 {
   margin-left: -13px;
 }
 .nav-blue {
-  margin-bottom: 24px;
-}
-.nav-blue ul {
   background-color: #105f81;
 }
 .nav-blue a {
@@ -4188,20 +4194,20 @@ h6 {
 .nav-blue a:hover {
   background-color: #1880ad;
 }
-.inner-page .button {
+.footer-page .button {
   padding: 7px 33px;
   float: left;
   margin-right: 17px;
 }
 .icon-printer,
 .icon-paper-plane {
-  font-size: 19px;
-  line-height: 26px;
+  font-size: 1.1875rem;
+  line-height: 2rem;
   margin-right: 30px;
 }
 .breadcrumbs {
   background: #ffffff;
-  font-size: 16px;
+  font-size: 1rem;
   color: #f44336;
   margin: 24px 0;
   display: inline-block;
@@ -4222,10 +4228,29 @@ h6 {
 .breadcrumbs a {
   color: #053357;
 }
+@media (max-width: 1500px) {
+  .inner-page {
+    background-size: auto 600px;
+  }
+}
 @media (max-width: 1400px) {
   .triangle-right {
     margin-left: 0;
     left: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .seclect-style {
+    display: block;
+  }
+  .nav-colour {
+    padding: 10px;
+  }
+  .nav-colour ul {
+    display: none;
+  }
+  .inner-page {
+    background-size: auto 600px;
   }
 }
 @media (max-width: 1130px) {
@@ -4281,6 +4306,50 @@ h6 {
   }
 }
 @media (max-width: 767px) {
+  .article-container {
+    font-size: 1rem;
+  }
+  .article-container p {
+    margin-bottom: 1.2rem;
+  }
+  .footer-page .button {
+    padding: 7px 15px;
+  }
+  .icon-printer,
+  .icon-paper-plane {
+    margin-right: 20px;
+  }
+  .inner-page .main-content {
+    background: #fff;
+  }
+  .nav-red {
+    margin-top: 10px;
+  }
+  .link-style .icon {
+    font-size: 32px;
+    margin: 0 10px;
+    line-height: 48px;
+  }
+  .title-triangle i {
+    line-height: 23px;
+  }
+  .title-blue {
+    margin-bottom: 24px;
+  }
+  .title-blue {
+    padding: 10px 20px;
+  }
+  .link-style {
+    font-size: 0.7rem;
+  }
+  .title-triangle,
+  .title-blue {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .article-container {
+    padding: 0;
+  }
   .vertical-slider.owl-carousel .owl-controls .owl-nav > div {
     font-size: 1.25rem;
   }
