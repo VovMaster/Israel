@@ -1,0 +1,380 @@
+.parallaxParent {
+	height: 732px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.parallax-bg {
+  height: 937px;
+  margin-top: -470px;
+  background-position: 50% 0;
+  background-size: cover;
+  width: 100%;
+}
+.bg {
+	background: url(../images/bg.jpg);
+	background-size: 100% auto;
+	background-position: 50% 100%;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.triangle-left {
+	height: 60px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 50%;
+	margin-right: -273px;
+	z-index: 2;
+	&:after {
+		content: " ";
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(to bottom right, #f44336 0%, #f44336 50%, transparent 51%, transparent 100%);
+	}
+}
+.triangle-right {
+	height: 222px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 50%;
+	margin-left: -700px;
+	z-index: 1;
+	&:after {
+		content: " ";
+		display: block;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(to bottom left, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 50%, transparent 50.2%, transparent 100%);
+		z-index: 2;
+	}
+}
+
+.list-blocks {
+	font-size: 0;
+	padding: 0;
+	position: relative;
+	z-index: 3;
+	> li {
+		float: none;
+		display: inline-block;
+		vertical-align: bottom;
+		font-size: 1rem;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+.block-style {
+	background: #0cc1cc;
+	color: #fff;
+	position: relative;
+	h3 {
+		font-size: (28 / 16) + 0rem;
+	}
+}
+.button-wrap {
+	position: absolute;
+	right: 12px;
+	bottom: 18px;
+	left: 12px;
+}
+
+.button {
+	text-decoration: none;
+	background: #f44336;
+	font-size: (18 / 16) + 0rem;
+	font-weight: bold;
+	color: #fff;
+	display: inline-block;
+	padding: 7px 16px;
+	max-width: 100%;
+	.arrow-left {
+		border-right-color: #fff;
+		vertical-align: middle;
+		position: relative;
+		top: -1px;
+		margin-right: 10px;
+	}
+	.arrow-right {
+		border-left-color: #fff;
+		vertical-align: middle;
+		margin-top: -3px;
+		margin-left: 10px;		
+	}
+	&:hover, &:focus, &:active {
+		color: #fff;
+		text-decoration: none;
+	}
+	&:hover {
+		background: #f44336 - 20%;
+	}
+}
+
+.button-primary {
+	background: #fff;
+	color: #1db0b9;
+	.arrow-left {
+		border-right-color: #1db0b9;
+	}
+	.arrow-right {
+		border-left-color: #1db0b9;
+	}
+	&:hover {
+		background: #1db0b9;
+		color: #fff;
+		.arrow-left {
+			border-right-color: #fff;
+		}
+		.arrow-right {
+			border-left-color: #fff;
+		}
+	}
+}
+.button-danger {
+	background: #fff;
+	color: #f45c2a;
+	.arrow-left {
+		border-right-color: #1db0b9;
+	}
+	.arrow-right {
+		border-left-color: #1db0b9;
+	}
+	&:hover {
+		background: #f45c2a;
+		color: #fff;
+		.arrow-left {
+			border-right-color: #fff;
+		}
+		.arrow-right {
+			border-left-color: #fff;
+		}
+	}
+}
+
+
+.block-style-text {
+	padding-top: 149%;
+	font-size: (20 / 16) + 0rem;
+	h3 {
+		margin-bottom: 47px;
+	}
+	p {
+		margin-bottom: 27px;
+	}
+	> div:first-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		top: 0;
+		bottom: 70px;
+		width: 100%;
+		overflow: hidden;
+		padding: 0 28px;
+	}
+}
+.block-style-news {
+	padding-top: 100.2%;
+	> div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		top: 0;
+		bottom: 22px;
+		width: 100%;
+		overflow: hidden;
+		padding: 0 40px;
+	}
+	h3 {
+		margin-bottom: 30px;
+	}
+	img {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.button {
+		position: static;
+		margin-bottom: 10px;
+	}
+	p {
+		margin-bottom: 22px;
+	}
+}
+.button-center {
+	padding-left: 40px;
+	padding-right: 40px;
+	position: relative;
+	.arrow-right {
+		position: absolute;
+		top: 50%;
+		right: 16px;
+		margin-top: -5px;
+	}
+}
+
+.icon-tenders {
+	font-size: 58px;
+	margin: -12px -5px -12px 5px;
+}
+.icon-environment {
+	font-size: 58px;
+	margin: -12px -5px -12px 5px;
+}
+.list-menu {
+	text-align: justify;
+	padding: 80px 0 30px 0;
+	overflow: hidden;
+	li {
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+		max-width: 200px;
+	}
+	&:after {
+		content: " ";
+		display: inline-block;
+		width: 100%;
+	}
+	a {
+		color: #2aafb7;
+		display: block;
+		text-decoration: none;
+		&:hover {
+			color: #f44336;
+		}
+	}
+	[class^="icon-"] {
+		font-size: 129px;
+		margin-bottom: 4px;
+	}
+}
+@media (max-width: 1400px) {
+	.triangle-right {
+		margin-left: 0;
+		left: 0;
+	}
+}
+
+@media (max-width: 1130px) {
+	.parallax-bg {
+		transform: none !important;
+		margin-top: 0;
+	}
+	.block-style-text h3, .block-style h3 {
+		margin-bottom: 20px;
+		font-size: (20 / 16) + 0rem;
+	}
+	.block-style-text, .block-style {
+		font-size: (16 / 16) + 0rem;
+	}
+	.button {
+		font-size: (16 / 16) + 0rem;
+	}
+	.block-style-news > div {
+		padding: 0 28px;
+	}
+	.block-style-news .button {
+		margin-bottom: 2px;
+	}
+	.list-menu [class^="icon-"] {
+		font-size: 85px;
+	}
+	.list-menu li {
+		max-width: 150px;
+	}
+
+}
+@media (max-width:991px) {
+	.horizontal-slider .slide {
+		font-size: (16 / 16) + 0rem;
+	}
+	.icon-tenders {
+	    font-size: 30px;
+	    margin: -2px -5px -12px 5px;
+	}
+	.icon-environment {
+	    font-size: 30px;
+	    margin: -2px -5px -12px 5px;
+	}
+	.slide-title {
+		padding: 10px;
+	}
+	.list-menu li {
+		max-width: 100px;
+	}
+	.list-menu li h4 {
+		font-size: (16 / 16) + 0rem;
+	}
+
+}
+@media (max-width: 767px) {
+	.vertical-slider.owl-carousel .owl-controls .owl-nav > div {
+		font-size: (20 / 16) + 0rem;
+	}
+	.wrap-vertical-slide {
+		padding: 0 62px;
+	}
+	.vertical-slider {
+		position: static;
+	}
+	.parallax-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.parallaxParent {
+		height: auto;
+		padding: 90px 0 40px 0;
+	}
+	.vertical-slider .h1 {
+		font-size: (20 / 16) + 0rem;
+	}
+	.button {
+		font-size: (14 / 16) + 0rem;
+	}
+	.triangle-right {
+		height: 100px;
+	}
+	.triangle-left {
+		height: 40px;
+	}
+	.block-style-text {
+		padding: 0;
+	}
+	.block-style-text > div:first-child {
+		position: static;
+		padding-bottom: 40px;
+	}
+	.list-blocks > li {
+		padding-bottom: 0;
+		display: block;
+	}
+	.block-style-news {
+		padding: 0;
+	}
+	.block-style-news > div:first-child {
+		position: static;
+	}
+
+	.horizontal-slider {
+	    padding: 40px 38px 25px;
+	}
+	.list-menu li {
+		width: 40%;
+		max-width: 100%;
+	}
+	.list-menu {
+		padding: 30px 0 0;
+	}
+	.block-style > img {
+		display: block;
+		width: 100%;
+	}
+}
