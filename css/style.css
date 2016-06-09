@@ -4028,6 +4028,8 @@ h6 {
 }
 .inner-page {
   background-image: url(../images/image-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 .inner-page .main-header {
   position: static;
@@ -4132,16 +4134,33 @@ h6 {
 }
 .nav-colour a {
   font-size: 16px;
-  line-height: 48px;
   color: #ffffff;
-  padding: 12px 15px;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
 }
-.nav-colour .active,
-.nav-colour .current {
+.nav-colour a:hover {
+  text-decoration: none;
+}
+.nav-red ul {
+  background-color: #f44336;
+}
+.nav-red a {
+  background-color: #f44336;
+  padding: 13px 15px;
+  line-height: 50px;
+}
+.nav-red a:hover {
+  background-color: #bd342a;
+}
+.nav-red .active,
+.nav-red .current {
   position: relative;
 }
-.nav-colour .active:after,
-.nav-colour .current:after {
+.nav-red .active:after,
+.nav-red .current:after {
   content: '';
   display: block;
   width: 0;
@@ -4154,17 +4173,20 @@ h6 {
   left: 50%;
   margin-left: -13px;
 }
-.nav-red ul {
-  background-color: #f44336;
-}
-.nav-red a {
-  background-color: #f44336;
+.nav-blue {
+  margin-bottom: 24px;
 }
 .nav-blue ul {
   background-color: #105f81;
 }
 .nav-blue a {
   background-color: #105f81;
+  padding: 7px 15px;
+  margin-left: 12px;
+  line-height: 38px;
+}
+.nav-blue a:hover {
+  background-color: #1880ad;
 }
 .inner-page .button {
   padding: 7px 33px;
